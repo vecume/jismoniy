@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jismoniy</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="maps-popup" class="maps" style="display: none;">
+  <div class="wrap-container">
+      <a href="/" class="header-logo">
+  <img src="img/gerb.png" alt="logo">
+  <span>O‘ZBЕKISTON RЕSPUBLIKASI <br>
+  VAZIRLAR MAHKAMASI HUZURIDAGI <br>
+  TA’LIM SIFATINI NAZORAT QILISH <br>
+  DAVLAT INSPЕKSIYASI</span>
+</a>        <div class="maps__close">
+          <a href="#">×</a>
+          <span>Карта сайта</span>
+      </div>
+      <div class="maps__search">
+          <form action="#">
+              <input type="text" placeholder="Введите слово для поиска">
+              <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+      </div>
+          </div>
+</div>
+  <header>
+  <div class="header-top">
+    <div class="wrap-container">
+      <ul class="toplist">
+        <li>
+          <a href="#">Reyting 2019</a>
+        </li>
+        <li>
+          <a href="#">Milliy markaz</a>
+        </li>
+        <li><a href="#">Onlayn test</a></li>
+        <li>
+          <a href="#"
+            >Nodavlat ta'lim muassasalari</a
+          >
+        </li>
+        <li><a href="#">TOP 1000</a></li>
+      </ul>
+      <div class="header-top-right">
+        <ul class="lanuage">
+          <li class="active"><a href="/">O'z</a></li>
+
+          <li><a href="#">Ру</a></li>
+
+          <li><a href="#">En</a></li>
+        </ul>
+
+        <div class="header__sound" href="#">
+          <img
+            src="img/megaphone.png"
+            alt="Sound"
+          />
+          <div id="sound-popup">
+            <span>Звуковое сопровождение</span>
+            <p>
+              На сайте присутствует звуковое сопровождение.
+            </p>
+            <p>
+              Чтобы прослушать текст необходимо выделите его мышкой
+            </p>
+          </div>
+        </div>
+        <a href="#eyeModal" class="eye-version" data-fancybox="" id="sView">
+          <img
+            src="img/eye-scanner.png"
+            alt="Maxsus imkoniyatlar"
+          />
+          <span>Maxsus imkoniyatlar</span>
+        </a>
+      </div>
+
+      <div class="search-input mobile-search">
+        <form action="/search/">
+          <button><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+
+      <div class="menu-toggle"><span></span></div>
+    </div>
+  </div>
+  <div class="wrap-container">
+    <div class="header-main">
+      <a href="/" class="header-logo">
+        <img src="img/gerb.png" alt="logo" />
+        <span
+          >O‘ZBЕKISTON RЕSPUBLIKASI <br />
+          VAZIRLAR MAHKAMASI HUZURIDAGI <br />
+          TA’LIM SIFATINI NAZORAT QILISH <br />
+          DAVLAT INSPЕKSIYASI</span
+        >
+      </a>
+      <div class="header-main-right">
+        <div class="global-search">
+          <ul class="header-social">
+            <li>
+              <a
+                href="#"
+                style="background: #2ba2df;"
+                ><img
+                  src="img/telegram.png"
+                  alt="telegram"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                style="background: #4267b2;"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                style="background: #4267b2;"
+                ><i class="fa fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="search-input">
+            <form action="/search/">
+              <input
+                type="text"
+                name="q"
+                value=""
+                placeholder="Sayt bo‘yicha izlash..."
+              />
+              <button><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="virtual-reception">
+          <p>Inspeksiya telefoni</p>
+          <a href="tel:+998712310753">+998 71 231-07-53</a>
+          <a href="/about/stop-corruption/" class="recep-btn"
+            ><img
+              alt="Stop-korrupsiya!"
+              src="img/stop.png"
+              style="width: 18px; height: 18px;"
+            />STOP-KORRUPSIYA!</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-nav">
+    <div class="wrap-container">
+      <div class="menu-icon"><span></span></div>
+      <nav class="overlayMenu">
+        <ul>
+          <li><a href="/">Bosh sahifa</a></li>
+
+          <li class="dropdown">
+            <a href="/about/">Inspeksiya</a>
+            <ul class="submenu">
+              <li><a href="/about/">Inspeksiya haqida</a></li>
+
+              <li><a href="/about/chiefs/">Rahbariyat</a></li>
+
+              <li><a href="/about/department/">Markaziy apparat</a></li>
+
+              <li><a href="/about/territorial/">Hududiy bo‘limlar</a></li>
+
+              <li><a href="/about/structure/">Tuzilma</a></li>
+
+              <li><a href="/about/stop-corruption/">Stop-korrupsiya!</a></li>
+
+              <li>
+                <a href="/about/anti-corruption/">Korrupsiyaga qarshi kurash</a>
+              </li>
+
+              <li><a href="/contacts/">Manzil</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="/activity/">Faoliyat</a>
+            <ul class="submenu">
+              <li>
+                <a href="/activity/attestation/"
+                  >Ta'lim muassasalari attestatsiyasi va davlat
+                  akkreditatsiyasi</a
+                >
+              </li>
+
+              <li>
+                <a href="/activity/ped/"
+                  >Pedagog kadrlar sifati nazorati, ta`lim hujjatlarini
+                  legallashtirish, tan olish va nostrifikatsiya qilish</a
+                >
+              </li>
+
+              <li>
+                <a href="/activity/monitoring/"
+                  >Uzluksiz ta`lim tizimida kadrlar tayyorlash monitoringini
+                  olib borish va sifatini nazorat qilish</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="/interactive/">Interaktiv xizmatlar</a></li>
+
+          <li class="dropdown">
+            <a href="/docs/">Hujjatlar</a>
+            <ul class="submenu">
+              <li><a href="/docs/3/">Ta’lim sohasiga oid qonunlar</a></li>
+
+              <li>
+                <a href="/docs/4/"
+                  >O‘zR Prezidentining ta’lim sohasiga oid Qaror, Farmon va
+                  Farmoyishlari</a
+                >
+              </li>
+
+              <li>
+                <a href="/docs/5/"
+                  >Vazirlar Mahkamasining ta’lim sohasiga oid Qarorlari</a
+                >
+              </li>
+
+              <li>
+                <a href="/docs/10/"
+                  >Vazirlik va idoralarning ta'lim sohasiga oid qarorlari</a
+                >
+              </li>
+
+              <li>
+                <a href="/docs/6/"
+                  >Inspeksiya faoliyatiga taaluqli normativ-huquqiy hujjatlar</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="/int/">Xalqaro aloqalar</a>
+            <ul class="submenu">
+              <li><a href="/int/partners/">Xalqaro hamkorlar</a></li>
+
+              <li><a href="/int/projects/">Hamkorlik loyihalari</a></li>
+
+              <li><a href="/int/agreement/">Kelishuv shartnomalari</a></li>
+
+              <li><a href="/int/memorandums/">Memorandumlar</a></li>
+
+              <li><a href="/int/experts/">Xalqaro ekspertlar</a></li>
+
+              <li><a href="/int/visits/">Xalqaro tashriflar</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="/press-service/">Axborot xizmati</a>
+            <ul class="submenu">
+              <li><a href="/press-service/contact/">Aloqa</a></li>
+
+              <li><a href="/news/">Yangiliklar</a></li>
+
+              <li><a href="/ads/">E’lonlar</a></li>
+
+              <li>
+                <a href="/press-service/legal-information/"
+                  >Huquqiy savodxonlik</a
+                >
+              </li>
+
+              <li><a href="/press-service/infomaterial/">Infografikalar</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/contacts/">Bog‘lanish</a></li>
+
+          <li class="dropdown">
+            <a href="/covid-19/">COVID-19</a>
+            <ul class="submenu">
+              <li><a href="/covid-19/tanlovlar/">Tanlovlar</a></li>
+
+              <li>
+                <a href="/covid-19/masofaviy-ta-lim-resurslari/"
+                  >Masofaviy ta`lim resurslari</a
+                >
+              </li>
+
+              <li>
+                <a href="/covid-19/ta-lim-sifatini-nazorat-qilish/"
+                  >Ta`lim sifatini nazorat qilish</a
+                >
+              </li>
+
+              <li>
+                <a href="/covid-19/pedagogik-kadrlar-attestatsiyasi/"
+                  >Pedagogik kadrlar attestatsiyasi</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="close-menu"></div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+  <main>
+    <div class="wrap-container">
+      <div class="block_news">
+  <div class="wrap-row">
+    <div class="column6">
+      <div class="main-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="img-wrapper">
+                <img src="img/sample.jpg" alt="sample">
+              </div>
+              <div class="slide-caption">
+                <div class="slide-news-date">
+                  <p>10</p>
+                  <span>dek</span>
+                </div>
+                <div class="slide-news-title">
+                  Oʻquvchilar savodxonligi baholash boʻyicha milliy tadqiqot
+                  jarayonlari boshlandi
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-wrapper">
+                <img src="img/sample2.jpg" alt="sample">
+              </div>
+              <div class="slide-caption">
+                <div class="slide-news-date">
+                  <p>14</p>
+                  <span>dek</span>
+                </div>
+                <div class="slide-news-title">
+                  “Oʻzbekistondagi Elseiver ilmiy kunlari” xalqaro
+                  konferensiyasi boshlandi
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-wrapper">
+                <img src="img/sample3.jpg" alt="sample">
+              </div>
+              <div class="slide-caption">
+                <div class="slide-news-date">
+                  <p>12</p>
+                  <span>dek</span>
+                </div>
+                <div class="slide-news-title">
+                  Samarqandda viloyat hokimi oʻrinbosari ishtirokida xalqaro
+                  tadqiqotlarga tayyorgarlik masalasi tanqidiy muhokama qilindi
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-wrapper">
+                <img src="img/sample4.jpg" alt="sample">
+              </div>
+              <div class="slide-caption">
+                <div class="slide-news-date">
+                  <p>10</p>
+                  <span>dek</span>
+                </div>
+                <div class="slide-news-title">
+                  Qoraqalpog'iston va Sirdaryoga sertifikatlar tarqatildi
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-wrapper">
+                <img src="img/sample2.jpg" alt="sample">
+              </div>
+              <div class="slide-caption">
+                <div class="slide-news-date">
+                  <p>10</p>
+                  <span>dek</span>
+                </div>
+                <div class="slide-news-title">
+                  Oʻquvchilar savodxonligini baholash boʻyicha milliy tadqiqot
+                  jarayonlari boshlandi
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-wrapper">
+                <img src="img/sample4.jpg" alt="sample">
+              </div>
+              <div class="slide-caption">
+                <div class="slide-news-date">
+                  <p>10</p>
+                  <span>dek</span>
+                </div>
+                <div class="slide-news-title">
+                  Oʻquvchilar savodxonligi baholash boʻyicha milliy tadqiqot
+                  jarayonlari boshlandi
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-wrapper">
+                <img src="img/sample.jpg" alt="sample">
+              </div>
+              <div class="slide-caption">
+                <div class="slide-news-date">
+                  <p>14</p>
+                  <span>dek</span>
+                </div>
+                <div class="slide-news-title">
+                  “Oʻzbekistondagi Elseiver ilmiy kunlari” xalqaro
+                  konferensiyasi boshlandi
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+    <div class="column6">
+      <div class="news-container">
+        <ul class="news-type tab-control">
+          <li class="active" data-id="tab1">Yangiliklar</li>
+          <li data-id="tab2">E’lonlar</li>
+          <li data-id="tab3">Video lavhalar</li>
+          <li data-id="tab4">Savol va javob</li>
+          <li data-id="tab5">So‘rovnomalar</li>
+        </ul>
+        <div class="news-wrap active news-control" id="tab1">
+          <a href="post.html" class="box_news" data-slider="1">
+            <div class="news-date">
+              <p>14</p>
+              <span>dek</span>
+            </div>
+            <div class="news-text">
+              <p></p>
+              <p style="text-align: justify;">
+                Joriy yilning 14-15-dekabr kunlari Niderlandiyaning Elseiver
+                kompaniyasi tomonidan “Oʻzbekistondagi Elseiver ilmiy kunlari”
+                xalqaro konferensiyasi tashkil etildi. Unda Taʼlim sifatini
+                nazorat qilish davlat inspeksiyasi boshligʻi Ulugʻbek
+                Tashkenbayev, Oliy va oʻrta maxsus taʼlim vaziri oʻrinbosari
+                Uzoqboy Begimqulov, Elseiver kompaniyasining Turkiya, Eron,
+                Yaqin Sharq va Markaziy Osiyodagi mintaqaviy direktori janob
+                Tayfun Bashal va boshqalar ishtirok etdi.
+              </p>
+              <p></p>
+            </div>
+          </a>
+          <a href="post.html" class="box_news" data-slider="2">
+            <div class="news-date">
+              <p>12</p>
+              <span>dek</span>
+            </div>
+            <div class="news-text">
+              <p></p>
+              <p style="text-align: justify;">
+                Bugun, 12-dekabr kuni Samarqand viloyati xalq taʼlimi
+                boshqarmasida xalqaro baholash dasturlariga tayyorgarlik koʻrish
+                boʻyicha tayanch maktablarning holati, faoliyatini oʻrganish
+                natijalariga bagʻishlangan onlayn yigʻilish boʻlib oʻtdi.
+              </p>
+              <p></p>
+            </div>
+          </a>
+          <a href="post.html" class="box_news" data-slider="3">
+            <div class="news-date">
+              <p>10</p>
+              <span>dek</span>
+            </div>
+            <div class="news-text">
+              <p></p>
+              <p style="text-align: justify;">
+                Oʻtgan haftada Toshkent shahri, Xorazm, Namangan, Navoiy,
+                Toshkent viloyatlari hamda Xalq taʼlimi vazirligi tasarrufidagi
+                ixtisoslashtirilgan taʼlim muassasalariga jami 6900 dan ortiq
+                pedagog kadrning attestatsiyadan oʻtganligi toʻgʻrisida
+                sertifikatlar tarqatilgani haqida xabar bergan edik.
+              </p>
+              <p></p>
+            </div>
+          </a>
+          <a href="/news/579/" class="box_news" data-slider="4">
+            <div class="news-date">
+              <p>10</p>
+              <span>dek</span>
+            </div>
+            <div class="news-text">
+              <p>
+                Joriy yilning 10-16-dekabr kunlari Respublikamizdagi
+                tasodifiylik asosida tanlab olingan 150 ta umumtaʼlim maktabida
+                PISA talablari asosida oʻquvchilar savodxonligini baholash
+                boʻyicha&nbsp;milliy tadqiqot oʻtkaziladi.
+              </p>
+            </div>
+          </a>
+          <a href="/news/578/" class="box_news" data-slider="5">
+            <div class="news-date">
+              <p>10</p>
+              <span>dek</span>
+            </div>
+            <div class="news-text">
+              <p>
+                Joriy yilning 10-16-dekabr kunlari Respublikamizdagi
+                tasodifiylik asosida tanlab olingan 150 ta umumtaʼlim maktabida
+                PISA talablari asosida oʻquvchilar savodxonligini baholash
+                boʻyicha&nbsp;milliy tadqiqot oʻtkaziladi.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="news-wrap" id="tab2" style="display: none;">
+          <a href="/ads/562/" class="box_news">
+            <div class="news-date">
+              <p>19</p>
+              <span>noy</span>
+            </div>
+            <div class="news-text">
+              <p>
+                Xorijiy davlatlarda taʼlim olganlik toʻgʻrisidagi hujjatlarni
+                tan olish uchun belgilangan “Mutaxassislik fanlari” boʻyicha
+                navbatdagi sinov testlari oʻtkazilish muddati ma'lum bo'ldi
+              </p>
+            </div>
+          </a>
+          <a href="/ads/522/" class="box_news">
+            <div class="news-date">
+              <p>21</p>
+              <span>okt</span>
+            </div>
+            <div class="news-text">
+              <p>
+                Xorijiy davlatlarda ta’lim olganlik to‘g‘risidagi hujjatlarni
+                tan olish uchun belgilangan “Mutaxassislik fanlari” bo‘yicha
+                navbatdagi sinov testlari o‘tkaziladigan kunlar ma’lum bo‘ldi
+              </p>
+            </div>
+          </a>
+          <a href="/ads/478/" class="box_news">
+            <div class="news-date">
+              <p>16</p>
+              <span>sen</span>
+            </div>
+            <div class="news-text">
+              <p>
+                Xorijiy davlatlarda taʼlim olganlik toʻgʻrisidagi hujjatlarni
+                tan olish uchun belgilangan “Mutaxassislik fanlari” boʻyicha
+                navbatdagi sinov testlari oʻtkaziladigan kunlar maʼlum boʻldi
+              </p>
+            </div>
+          </a>
+          <a href="/ads/439/" class="box_news">
+            <div class="news-date">
+              <p>18</p>
+              <span>avg</span>
+            </div>
+            <div class="news-text">
+              <p>
+                Qoraqalpog‘iston Respublikasi va Xorazm viloyatida yashovchi
+                fuqarolar uchun xorijiy davlatlarda ta’lim olganlik
+                to‘g‘risidagi hujjatlarni tan olish uchun navbatdagi sinov
+                testlari o‘tkaziladigan kunlar ma’lum bo‘ldi
+              </p>
+            </div>
+          </a>
+          <a href="/ads/438/" class="box_news">
+            <div class="news-date">
+              <p>18</p>
+              <span>avg</span>
+            </div>
+            <div class="news-text">
+              <p>
+                Toshkent shahri, Sirdaryo va Toshkent viloyatlarida yashovchi
+                fuqarolar uchun xorijiy davlatlarda ta’lim olganlik
+                to‘g‘risidagi hujjatlarni tan olish uchun navbatdagi sinov
+                testlari o‘tkaziladigan kunlar ma’lum bo‘ldi
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="news-wrap vedio-news"
+          id="tab3"
+          style="display: none;"
+        ></div>
+        <div class="news-wrap" id="tab4" style="display: none;"></div>
+        <div class="news-wrap" id="tab5" style="display: none;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="activity-container">
+  <h2><span>Faoliyat yo‘nalishlari</span></h2>
+  <div class="wrap-row">
+    <div class="column4">
+      <a href="#" class="activity">
+        <div class="activity-icon">
+          <img
+            src="img/useful1.png"
+            alt="Ta'lim muassasalari attestatsiyasi va davlat akkreditatsiyasi"
+          />
+        </div>
+        <p>Ta'lim muassasalari attestatsiyasi va davlat akkreditatsiyasi</p>
+      </a>
+    </div>
+    <div class="column4">
+      <a href="#" class="activity">
+        <div class="activity-icon">
+          <img
+            src="img/useful2.png"
+            alt="Nostrifikatsiya hujjatlarni legallashtirish"
+          />
+        </div>
+        <p>Nostrifikatsiya hujjatlarni legallashtirish</p>
+      </a>
+    </div>
+    <div class="column4">
+      <a href="#" class="activity">
+        <div class="activity-icon">
+          <img
+            src="img/useful3.png"
+            alt="Uzluksiz ta’lim tizimida kadrlar tayyorlash monitoringini olib borish va sifatini nazorat qilish"
+          />
+        </div>
+        <p>
+          Uzluksiz ta’lim tizimida kadrlar tayyorlash monitoringini olib borish
+          va sifatini nazorat qilish
+        </p>
+      </a>
+    </div>
+    <div class="column4">
+      <a href="/activity/ped/pka/" class="activity">
+        <div class="activity-icon">
+          <img
+            src="img/useful4.png"
+            alt="Uzluksiz taʼlim tizimi pedagog kadrlari sifati nazorati"
+          />
+        </div>
+        <p>Uzluksiz taʼlim tizimi pedagog kadrlari sifati nazorati</p>
+      </a>
+    </div>
+    <div class="column4">
+      <a href="#" class="activity">
+        <div class="activity-icon">
+          <img src="img/useful5.png" alt="Litsenziyalash" />
+        </div>
+        <p>Litsenziyalash</p>
+      </a>
+    </div>
+    <div class="column4">
+      <a href="http://resultapostille.tdi.uz/" class="activity">
+        <div class="activity-icon">
+          <img src="img/useful6.png" alt="Apostil qo‘yish" />
+        </div>
+        <p>Apostil qo‘yish</p>
+      </a>
+    </div>
+    <div class="column4">
+      <a href="#" class="activity">
+        <div class="activity-icon">
+          <img src="img/useful7.png" alt="Harakatlar strategiyasi" />
+        </div>
+        <p>Harakatlar strategiyasi</p>
+      </a>
+    </div>
+    <div class="column4">
+      <a href="#" class="activity">
+        <div class="activity-icon">
+          <img src="img/useful8.png" alt="Reyting" />
+        </div>
+        <p>Reyting</p>
+      </a>
+    </div>
+    <div class="column4">
+      <a href="#" class="activity">
+        <div class="activity-icon">
+          <img src="img/useful9.png" alt="Xalqaro aloqalar" />
+        </div>
+        <p>Xalqaro aloqalar</p>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="services-container">
+  <h2><span>Interaktiv xizmatlar</span></h2>
+  <div class="wrap-row">
+    <div class="column3">
+      <a
+        href="#"
+      
+        class="services"
+      >
+        <h3>Nostrifikatsiya</h3>
+        <p>Hujjatlarni<br />legallashtirish</p>
+        <img
+          src="img/service1.png"
+          alt="Nostrifikatsiya"
+        />
+      </a>
+    </div>
+    <div class="column3">
+      <a href="#" class="services">
+        <h3>Apostil</h3>
+        <p>Hujjatlarni<br />yuborish</p>
+        <img
+          src="img/service2.png"
+          alt="Apostil"
+        />
+      </a>
+    </div>
+    <div class="column3">
+      <a href="#" class="services">
+        <h3>Litsenziya</h3>
+        <p>Ma’lumotlarni<br />ko‘rish</p>
+        <img
+          src="img/service3.png"
+          alt="Litsenziya"
+        />
+      </a>
+    </div>
+    <div class="column3">
+      <a href="#" class="services">
+        <h3>Toifa</h3>
+        <p>Toifani<br />tekshirish</p>
+        <img
+          src="img/service4.png"
+          alt="Toifa"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="wrap-container">
+  <div class="useful-links">
+    <h2><span>Foydali havolalar</span></h2>
+    <div class="useful-slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide">
+            <div class="useful-img">
+              <img
+                src="img/ulink1.png"
+                alt="O‘zbekiston respublikasi ochiq ma’lumotlar portali"
+              />
+            </div>
+            <div class="useful-text">
+              O‘zbekiston respublikasi ochiq ma’lumotlar portali
+            </div> </a
+          ><a href="#" class="swiper-slide">
+            <div class="useful-img">
+              <img
+                src="img/ulink2.png"
+                alt="Oliy va o‘rta maxsus ta’lim vazirligi"
+              />
+            </div>
+            <div class="useful-text">
+              Oliy va o‘rta maxsus ta’lim vazirligi
+            </div> </a
+          ><a href="#" class="swiper-slide">
+            <div class="useful-img">
+              <img src="img/ulink3.png" alt="Xalq ta’limi vazirligi" />
+            </div>
+            <div class="useful-text">Xalq ta’limi vazirligi</div> </a
+          ><a href="#" class="swiper-slide">
+            <div class="useful-img">
+              <img src="img/ulink2.png" alt="Maktabgacha ta’lim vazirligi" />
+            </div>
+            <div class="useful-text">Maktabgacha ta’lim vazirligi</div>
+          </a>
+          <a href="#" class="swiper-slide">
+            <div class="useful-img">
+              <img
+                src="img/ulink4.png"
+                alt="O‘zbekiston respublikasi Prezidentining matbuot xizmati"
+              />
+            </div>
+            <div class="useful-text">
+              O‘zbekiston respublikasi Prezidentining matbuot xizmati
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-button-next1">
+        <i class="fa fa-angle-right"></i>
+      </div>
+      <div class="swiper-button-prev1">
+        <i class="fa fa-angle-left"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  <footer>
+  <div class="footer-main">
+    <div class="wrap-container">
+      <div class="wrap-row">
+        <div class="footer-social">
+          <p>
+            Materialdan to‘liq yoki qisman foydalanilganda, tdi.uz manbasi
+            ko‘rsatilishi shart.
+          </p>
+          <a href="" class="press-link">Matbuot xizmati</a>
+          <br /><br />
+          <p>
+            Ijtimoiy tarmoqlarda:
+            <a href="#"
+              ><img
+                src="img/telegram2.png"
+                alt="telegram"
+            /></a>
+            <a href="#" 
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a href="#"
+              ><i class="fa fa-twitter"></i
+            ></a>
+          </p>
+        </div>
+        <div class="footer-contact">
+          <div class="box-con">
+            <div class="contact-box">
+              <div class="contact-icon"><i class="fa fa-phone"></i></div>
+              <div class="contact-text">
+                <p>Telefon:</p>
+                <a href="tel:+998712310753" title="Bog‘lanish"
+                  >+998 71 231 07 53</a
+                >
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+              <div class="contact-text">
+                <p>Elektron pochta:</p>
+                <a
+                  href="mailto:info@tdi.uz"
+                  title="Elektron pochta orqali xat yuborish"
+                  >info@tdi.uz</a
+                >
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="contact-icon"><i class="fa fa-map-marker"></i></div>
+              <div class="contact-text">
+                <p>Manzil:</p>
+                <a
+                  href="https://goo.gl/maps/QQru6g5LfvNpyQvcA"
+                  title="Google xaritasida ko'rish"
+                  >Nurxon ko‘chasi, 21-uy</a
+                >
+              </div>
+            </div>
+          </div>
+          <p>
+            100115, O‘zbekiston, Toshkent shahri, Chilonzor tumani, Nurxon
+            ko‘chasi, 21-uy.<br />
+            Ish kunlari: dushanba-juma (9:00-18:00, 13:00-14:00gacha
+            tushlik).<br />
+            Dam olish kunlari: shanba, yakshanba va bayram kunlari.<br /><br />
+          </p>
+          <p>
+            Agar siz matnda xatoliklarni aniqlasangiz, ularni belgilab,
+            ma’muriyatni xabardor qilish uchun Ctrl+Enter tugmalarini bosing
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="wrap-container">
+      <p>Copyright © 2017-2020</p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>

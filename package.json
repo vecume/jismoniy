@@ -1,5 +1,5 @@
 {
-  "name": "Template",
+  "name": "jismoniy",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,9 +19,17 @@
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-include": "^2.4.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-purgecss": "^3.1.0",
+    "gulp-purifycss": "^0.2.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-webp": "^4.0.1",
     "gulp-webp-html": "^1.0.2"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "swiper": "^6.4.1"
   }
 }

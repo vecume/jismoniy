@@ -3,9 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Template</title>
+  <title>Jismoniy</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  
+  @@include('./html/maps-popup.html')
+  @@include('./html/header.html')
+
+  <main>
+    <div class="wrap-container">
+      @@include('./html/block-news.html')
+      @@include('./html/useful-block.html')
+    </div>
+    @@include('./html/useful-links.html')
+  </main>
+
+  @@include('./html/footer.html')
+
+  <script src="js/main.js"></script>
 </body>
 </html>

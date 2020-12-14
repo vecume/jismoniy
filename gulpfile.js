@@ -36,7 +36,8 @@ let { src, dest } = require("gulp"),
   sourcemaps = require("gulp-sourcemaps"),
   include = require("gulp-include"),
   fileInclude = require("gulp-file-include"),
-  minify = require("gulp-minify");
+  minify = require("gulp-minify"),
+  purify = require("gulp-purifycss");
 // ttf2woff = require("gulp-ttf2woff"),
 // ttf2woff2 = require("gulp-ttf2woff2");
 // webp = require("gulp-webp"),
@@ -81,30 +82,34 @@ function css(params) {
         })
       )
       // .pipe(webpcss())
+      // .pipe(purify([path.src.js, path.src.html, "./src/html/*.html"]))
       .pipe(cleanCss())
       .pipe(sourcemaps.write("."))
+
       .pipe(dest(path.build.css))
       .pipe(browsersync.stream())
   );
 }
 
 function js() {
-  return src(path.src.js)
-    .pipe(
-      include({
-        includePaths: [__dirname + "/node_modules", __dirname + "/src/js"],
-      })
-    ) //to collect js sections
-//     .pipe(
-//       minify({
-//         ext: {
-//           min: ".js",
-//         },
-//         noSource: true,
-//       })
-//     )
-    .pipe(dest(path.build.js))
-    .pipe(browsersync.stream());
+  return (
+    src(path.src.js)
+      .pipe(
+        include({
+          includePaths: [__dirname + "/node_modules", __dirname + "/src/js"],
+        })
+      ) //to collect js sections
+      //     .pipe(
+      //       minify({
+      //         ext: {
+      //           min: ".js",
+      //         },
+      //         noSource: true,
+      //       })
+      //     )
+      .pipe(dest(path.build.js))
+      .pipe(browsersync.stream())
+  );
 }
 
 function images() {
@@ -155,7 +160,7 @@ function watchFiles() {
 let build = gulp.series(
   clean,
   html,
-  gulp.parallel(js, css, html, images, fonts)
+  gulp.parallel(html, js, css, images, fonts)
 );
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
