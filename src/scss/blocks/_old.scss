@@ -1,3 +1,89 @@
+.blackAndWhite {
+  filter: grayscale(100%);
+}
+
+.blackAndWhiteInvert,
+.blackAndWhiteInvert img,
+.blackAndWhiteInvert embed,
+.blackAndWhiteInvert video {
+  filter: grayscale(100%) invert(100%);
+}
+
+.specialViewArea {
+  padding: 10px 20px 20px 20px;
+  width: 265px;
+  right: -10px;
+  top: 30px;
+  color: #000;
+  z-index: 100 !important;
+}
+.appearance {
+  margin-bottom: 10px;
+  clear: both;
+  display: table;
+  width: 100%;
+}
+.squareBox {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  font-size: 27px;
+  font-weight: bolder;
+  cursor: pointer;
+  background: #828282;
+  border: 2px solid #353535;
+  color: #fff;
+}
+.specialTitle {
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+}
+.squareAppearances {
+  float: left;
+  margin-right: 5px;
+}
+.squareBox.spcNormal {
+  background: #00a2e0;
+  border-color: #034e6b;
+}
+.squareBox.spcWhiteAndBlack {
+  background: #828282;
+  border-color: #353535;
+}
+.squareBox.spcDark {
+  background: #3e3e3e;
+  border-color: #777777;
+}
+.fontSmaller {
+  font-size: 24px;
+}
+.fontBigger {
+  font-size: 26px;
+}
+
+.defaultSlider {
+  height: 6px !important;
+  background: #b7b7b7;
+  margin-top: 20px;
+  border: none;
+}
+.defaultSlider span {
+  border-radius: 50%;
+  outline: none;
+  background: #fff !important;
+  cursor: pointer !important;
+  top: -7px !important;
+}
+.defaultSlider span:focus,
+.defaultSlider span:hover {
+  border-color: #d3d3d3;
+}
+.defaultSlider .ui-slider-range {
+  background: #017beb;
+}
+
 .maps {
   display: none;
   position: absolute;
@@ -1656,17 +1742,29 @@ header {
   color: $mc;
 }
 .eye-version {
-  display: flex;
-  align-items: center;
+  position: relative;
+  a {
+    display: flex;
+    align-items: center;
+  }
 }
 .eye-version img {
   width: 22px;
   height: auto;
   margin-right: 7px;
 }
+.sliderText {
+  font-size: 16px;
+}
 .eye-version span {
   color: #fff;
   font-size: 14px;
+  &.range {
+    display: inline-block;
+    color: #000;
+    font-size: 17px;
+    font-weight: bold;
+  }
 }
 .header-main {
   display: flex;
@@ -5260,9 +5358,14 @@ main {
   }
 }
 #eyeModal {
-  display: none;
-  padding: 25px 15px !important;
-  border-radius: 5px !important;
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  transform: translateY(100%);
+  z-index: 10;
+  .specialViewArea {
+    background-color: #fff;
+  }
 }
 .specialTitle {
   margin-bottom: 10px;

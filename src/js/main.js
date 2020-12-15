@@ -17,6 +17,27 @@ $(document).ready(function () {
     mainSlider.slideTo(newsIndex - 1, 300);
   });
 
+  $("#sView").on("click", function (e) {
+    e.preventDefault();
+    $("#eyeModal").toggle();
+  });
+
+  $(".js-slider input").on("change", function () {
+    const value = parseInt($(this).val(), 10);
+    console.log(value);
+    $(".sliderText .range").text(value);
+    $("body").attr("style", `zoom: ${100 + value}%;`);
+  });
+
+  $(".squareAppearances").on("click", function () {
+    const dataClass = $(this).data("class");
+    if (dataClass == "normal") {
+      $("html").attr("class", "");
+      return;
+    }
+    $("html").attr("class", dataClass);
+  });
+
   if ($(window).width() < 1200) {
     $(".dropdown>a").on("click", function (e) {
       $(this).parent().toggleClass("active");

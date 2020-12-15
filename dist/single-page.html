@@ -39,9 +39,7 @@
         </li>
         <li><a href="#">Onlayn test</a></li>
         <li>
-          <a href="#"
-            >Nodavlat ta'lim muassasalari</a
-          >
+          <a href="#">Nodavlat ta'lim muassasalari</a>
         </li>
         <li><a href="#">TOP 1000</a></li>
       </ul>
@@ -55,10 +53,7 @@
         </ul>
 
         <div class="header__sound" href="#">
-          <img
-            src="img/megaphone.png"
-            alt="Sound"
-          />
+          <img src="img/megaphone.png" alt="Sound" />
           <div id="sound-popup">
             <span>Звуковое сопровождение</span>
             <p>
@@ -69,13 +64,63 @@
             </p>
           </div>
         </div>
-        <a href="#eyeModal" class="eye-version" data-fancybox="" id="sView">
-          <img
-            src="img/eye-scanner.png"
-            alt="Maxsus imkoniyatlar"
-          />
-          <span>Maxsus imkoniyatlar</span>
-        </a>
+        <div class="eye-version">
+          <a href="#eyeModal" id="sView">
+            <img src="img/eye-scanner.png" alt="Maxsus imkoniyatlar" />
+            <span>Maxsus imkoniyatlar</span>
+          </a>
+          <div id="eyeModal" style="display: none;">
+  <div class="dropdown-menu dropdown-menu-right specialViewArea">
+    <div class="appearance">
+      <p class="specialTitle" style="font-size: 16px;">Ko'rinish</p>
+
+      <div class="squareAppearances" data-class="normal">
+        <div class="squareBox spcNormal" title="Oddiy ko'rinish">
+          A
+        </div>
+      </div>
+      <div class="squareAppearances" data-class="blackAndWhite">
+        <div
+          class="squareBox spcWhiteAndBlack"
+          title="Oq-qora ko'rinish"
+        >
+          A
+        </div>
+      </div>
+      <div class="squareAppearances" data-class="blackAndWhiteInvert">
+        <div
+          class="squareBox spcDark"
+          title="Qorong'ilashgan ko'rinish"
+        >
+          A
+        </div>
+      </div>
+    </div>
+    <div class="appearance">
+      <p class="specialTitle" style="font-size: 16px;">Shrift o'lchami</p>
+      <div class="block">
+        <div class="sliderText">
+          <span class="range">0</span>% ga kattalashtirish
+        </div>
+        <div class="js-slider">
+          <input type="range" min="0" max="100" value="0">
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    type="button"
+    data-fancybox-close=""
+    class="fancybox-button fancybox-close-small"
+    title="Close"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+      <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+    </svg>
+  </button>
+</div>
+
+        </div>
       </div>
 
       <div class="search-input mobile-search">
@@ -102,25 +147,17 @@
         <div class="global-search">
           <ul class="header-social">
             <li>
-              <a
-                href="#"
-                style="background: #2ba2df;"
-                ><img
-                  src="img/telegram.png"
-                  alt="telegram"
+              <a href="#" style="background: #2ba2df;"
+                ><img src="img/telegram.png" alt="telegram"
               /></a>
             </li>
             <li>
-              <a
-                href="#"
-                style="background: #4267b2;"
+              <a href="#" style="background: #4267b2;"
                 ><i class="fa fa-facebook"></i
               ></a>
             </li>
             <li>
-              <a
-                href="#"
-                style="background: #4267b2;"
+              <a href="#" style="background: #4267b2;"
                 ><i class="fa fa-twitter"></i
               ></a>
             </li>
