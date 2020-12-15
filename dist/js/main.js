@@ -20368,7 +20368,7 @@ $(document).ready(function () {
       disableOnInteraction: false,
     },
   });
-
+  
   const usefulLinksSlider = new Swiper(".useful-slider .swiper-container", {
     slidesPerView: 4,
     spaceBetween: 20,
@@ -20394,6 +20394,48 @@ $(document).ready(function () {
       },
     },
   });
+  
+  const photoNewsSlider = new Swiper(".more-news-slider .swiper-container", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    speed: 800,
+    loop: true,
+    centeredSlides: false,
+    breakpoints: {
+      575: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  
+  const videoNewsSlider = new Swiper(".video-news-slider .swiper-container", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    speed: 800,
+    loop: true,
+    centeredSlides: false,
+    autoplay: {
+      delay: 2000,
+    },
+    breakpoints: {
+      575: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  
 
   $(".tab-control li").on("click", function () {
     $(this).addClass("active").siblings().removeClass("active");

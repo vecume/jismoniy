@@ -49,7 +49,7 @@
 }
 
 .maps .maps__search input:focus {
-  border-color: #028a85;
+  border-color: $mc;
   outline: none;
 }
 
@@ -58,7 +58,7 @@
   top: 50%;
   transform: translateY(-50%);
   right: 20px;
-  color: #028a85;
+  color: $mc;
   font-size: 18px;
   background-color: transparent;
   border: none;
@@ -127,7 +127,7 @@
 }
 
 .maps .maps__wrap-o a:hover span {
-  color: #028a85;
+  color: $mc;
 }
 
 .maps .maps__eng .maps__box {
@@ -138,11 +138,11 @@
 }
 
 .maps .maps__eng .maps__box .footer-social p {
-  color: #028a85;
+  color: $mc;
 }
 
 .maps .maps__eng .maps__box .footer-social a {
-  background-color: #028a85;
+  background-color: $mc;
 }
 
 .maps .maps__eng .maps__box .footer-social a img {
@@ -280,7 +280,7 @@
 }
 
 .a-main .documents-container .document__img .texttt .type {
-  color: #028a85;
+  color: $mc;
 }
 
 .abt .wrap-row {
@@ -432,7 +432,7 @@
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  color: #028a85;
+  color: $mc;
   cursor: pointer;
   outline: none;
   transition: all 0.4s;
@@ -440,7 +440,7 @@
 
 .abt .wrap-row .about__slider .swiper-button-prev-e:hover,
 .abt .wrap-row .about__slider .swiper-button-next-e:hover {
-  background: #028a85;
+  background: $mc;
   color: #fff;
 }
 
@@ -536,7 +536,7 @@
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  color: #028a85;
+  color: $mc;
   cursor: pointer;
   outline: none;
   transition: all 0.4s;
@@ -544,7 +544,7 @@
 
 .global-networks .swiper-button-prev-g:hover,
 .global-networks .swiper-button-next-g:hover {
-  background: #028a85;
+  background: $mc;
   color: #fff;
 }
 
@@ -633,7 +633,7 @@
   color: #ffffff;
   font-size: 18px;
   border-radius: 10px;
-  background-color: #028a85;
+  background-color: $mc;
   padding: 5px 30px;
 }
 
@@ -684,7 +684,7 @@
   content: "";
   position: absolute;
   border-radius: 10px;
-  border: 1px solid #028a85;
+  border: 1px solid $mc;
   background-color: #ffffff;
   width: 100%;
   height: 100%;
@@ -697,7 +697,7 @@
   content: "";
   position: absolute;
   border-radius: 10px;
-  border: 1px solid #028a85;
+  border: 1px solid $mc;
   background-color: #ffffff;
   width: 100%;
   height: 100%;
@@ -715,7 +715,7 @@
   color: #000000;
   font-size: 14px;
   border-radius: 10px;
-  border: 2px solid #028a85;
+  border: 2px solid $mc;
   background-color: #ffffff;
   padding: 8px 20px 8px 15px;
   cursor: pointer;
@@ -731,7 +731,7 @@
   transform: translateY(-50%);
   font-family: "FontAwesome";
   line-height: 1;
-  color: #028a85;
+  color: $mc;
 }
 
 .structure__content .str-first button:after {
@@ -767,7 +767,7 @@
   content: "";
   position: absolute;
   border-radius: 10px;
-  border: 1px dashed #028a85;
+  border: 1px dashed $mc;
   background-color: #ffffff;
   width: 100%;
   height: 100%;
@@ -780,7 +780,7 @@
   content: "";
   position: absolute;
   border-radius: 10px;
-  border: 1px dashed #028a85;
+  border: 1px dashed $mc;
   background-color: #ffffff;
   width: 100%;
   height: 100%;
@@ -844,7 +844,7 @@
 
 .structure__content .str-main .str-step-1 .str-more span {
   border-radius: 10px;
-  border: 1px solid #028a85;
+  border: 1px solid $mc;
   background-color: #ffffff;
   padding: 10px 5px 5px 5px;
 }
@@ -855,7 +855,7 @@
 }
 
 .structure__content .str-main .str-step-1 .str-more-main span {
-  border: 1px dashed #028a85;
+  border: 1px dashed $mc;
   margin-top: 48px;
   cursor: default;
 }
@@ -996,7 +996,7 @@
 }
 
 .structure__content .str-main .str-step-3 .str-more-main span {
-  border: 1px dashed #028a85;
+  border: 1px dashed $mc;
   margin-top: 42px;
   cursor: default;
   border-radius: 10px;
@@ -1057,7 +1057,7 @@
 .corruption__form form input:focus,
 .corruption__form form textarea:hover,
 .corruption__form form textarea:focus {
-  border: 2px solid #028a85;
+  border: 2px solid $mc;
   outline: none;
   padding: 8px 14px;
 }
@@ -1089,7 +1089,7 @@
 }
 
 .corruption__form form .corruption__check input:checked + label:before {
-  background-color: #028a85;
+  background-color: $mc;
 }
 
 .corruption__form form .corruption__check label {
@@ -1111,7 +1111,7 @@
   min-width: 10px;
   min-height: 10px;
   background-color: #fff;
-  border: 2px solid #028a85;
+  border: 2px solid $mc;
   border-radius: 2px;
 }
 
@@ -1133,7 +1133,7 @@
   font-family: "Roboto";
   font-size: 16px;
   border-radius: 4px;
-  background-color: #028a85;
+  background-color: $mc;
   padding: 13px 60px;
   border: none;
   cursor: pointer;
@@ -1573,7 +1573,7 @@ header {
   background: #fff;
 }
 .header-top {
-  background: #028a85;
+  background: $mc;
   padding: 10px 0;
 }
 
@@ -1653,7 +1653,7 @@ header {
 }
 .lanuage li.active a {
   background: #fff;
-  color: #028a85;
+  color: $mc;
 }
 .eye-version {
   display: flex;
@@ -1751,7 +1751,7 @@ header {
   transition: all 0.3s;
 }
 .search-input input:focus {
-  border: 1px solid #028a85;
+  border: 1px solid $mc;
 }
 .search-input button {
   position: absolute;
@@ -1764,7 +1764,7 @@ header {
   width: 20px;
   height: 20px;
   font-size: 16px;
-  color: #028a85;
+  color: $mc;
   cursor: pointer;
 }
 .virtual-reception {
@@ -1814,7 +1814,7 @@ header {
   transform: translate(-50%, -50%);
   width: 100%;
   height: 3px;
-  background: #028a85;
+  background: $mc;
 }
 .menu-icon span:before {
   content: "";
@@ -1822,7 +1822,7 @@ header {
   left: 0;
   width: 100%;
   height: 3px;
-  background: #028a85;
+  background: $mc;
   top: -8px;
 }
 .menu-icon span:after {
@@ -1831,7 +1831,7 @@ header {
   left: 0;
   width: 100%;
   height: 3px;
-  background: #028a85;
+  background: $mc;
   top: 8px;
 }
 .header-nav .wrap-container {
@@ -1870,7 +1870,7 @@ header {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #028a85;
+  background: $mc;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.4s;
@@ -1910,7 +1910,7 @@ header {
 }
 @media screen and (min-width: 575px) {
   .submenu > li > a:hover {
-    background: #028a85;
+    background: $mc;
     color: #fff;
   }
 }
@@ -1992,7 +1992,7 @@ main {
   margin: 4px 0 17px 0;
 }
 .news-type li.active {
-  background: #028a85;
+  background: $mc;
   color: #fff;
 }
 .news-type li {
@@ -2023,7 +2023,7 @@ main {
   transition: all 0.3s;
 }
 .news-date {
-  background: #028a85;
+  background: $mc;
   border-radius: 3px;
   width: 38px;
   height: 38px;
@@ -2071,7 +2071,7 @@ main {
   font-weight: unset;
 }
 .vedio-news .news-text p {
-  color: #028a85;
+  color: $mc;
   font-size: 12px;
 }
 .news-text p {
@@ -2217,7 +2217,7 @@ main {
   border-radius: 6px;
   border: 3px solid #fff;
   height: 100%;
-  background: #028a85;
+  background: $mc;
   color: #fff;
   padding: 15px 20px;
   display: flex;
@@ -2241,27 +2241,6 @@ main {
 }
 .services-container {
   margin-top: 15px;
-}
-.services-container > h2 {
-  font-family: "Roboto";
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 16px;
-  margin-bottom: 25px;
-  overflow: hidden;
-}
-.services-container > h2 span {
-  position: relative;
-}
-.services-container > h2 span:before {
-  content: "";
-  position: absolute;
-  left: calc(100% + 25px);
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1100px;
-  height: 2px;
-  background: #f1f1f1;
 }
 .services {
   padding: 30px 40px 60px 20px;
@@ -2313,7 +2292,7 @@ main {
   margin: 4px 0;
 }
 .r-phone {
-  color: #028a85;
+  color: $mc;
   font-family: "Roboto";
   font-weight: 900;
   font-size: 13px;
@@ -2358,7 +2337,7 @@ main {
   height: 30px;
   line-height: 30px;
   border-radius: 30px;
-  background: #028a85;
+  background: $mc;
   margin-left: 15px;
   padding: 0 18px;
   transition: all 0.3s;
@@ -2434,7 +2413,7 @@ main {
   transform: translateY(-50%);
   width: 1100px;
   height: 1px;
-  background: #028a85;
+  background: $mc;
 }
 .top-header a,
 .all-mobile {
@@ -2443,7 +2422,7 @@ main {
   height: 30px;
   line-height: 30px;
   border-radius: 30px;
-  background: #028a85;
+  background: $mc;
   margin-left: 15px;
   padding: 0 18px;
   transition: all 0.3s;
@@ -2491,7 +2470,7 @@ main {
   font-size: 14px;
   font-family: "Roboto";
   font-weight: bold;
-  color: #028a85;
+  color: $mc;
   margin-right: 10px;
   display: block;
   width: 17px;
@@ -2506,7 +2485,7 @@ main {
 .useful-links {
   padding: 40px 0;
 }
-.useful-links > h2 {
+.section-title {
   font-family: "Roboto";
   font-weight: 900;
   text-transform: uppercase;
@@ -2514,10 +2493,10 @@ main {
   margin-bottom: 30px;
   overflow: hidden;
 }
-.useful-links > h2 span {
+.section-title span {
   position: relative;
 }
-.useful-links > h2 span:before {
+.section-title span:before {
   content: "";
   position: absolute;
   left: calc(100% + 25px);
@@ -2564,7 +2543,7 @@ main {
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  color: #028a85;
+  color: $mc;
   cursor: pointer;
   outline: none;
   transition: all 0.4s;
@@ -2576,7 +2555,7 @@ main {
   left: -40px;
 }
 .footer-main {
-  background: #028a85;
+  background: $mc;
   padding: 50px 0 30px 0;
 }
 .footer-main .wrap-container {
@@ -2612,7 +2591,7 @@ main {
   font-size: 16px;
   border-radius: 50%;
   background: #fff;
-  color: #028a85;
+  color: $mc;
 }
 .contact-box {
   display: flex;
@@ -2624,7 +2603,7 @@ main {
   height: 38px;
   background: #ffffff;
   border-radius: 50%;
-  color: #028a85;
+  color: $mc;
   font-size: 26px;
   display: flex;
   align-items: center;
@@ -2681,7 +2660,7 @@ main {
 @media screen and (min-width: 575px) {
   .lanuage li a:hover {
     background: #fff;
-    color: #028a85;
+    color: $mc;
   }
   .activity:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 5px 8px rgba(0, 0, 0, 0.08);
@@ -2691,16 +2670,16 @@ main {
   }
   .swiper-button-prev2:hover,
   .swiper-button-next2:hover {
-    color: #028a85;
+    color: $mc;
   }
   .top-lists li a:hover {
-    color: #028a85;
+    color: $mc;
   }
   .header-logo:hover span {
-    color: #028a85;
+    color: $mc;
   }
   .virtual-reception a:not(.recep-btn):hover {
-    color: #028a85;
+    color: $mc;
   }
   .virtual-reception a.recep-btn:hover {
     box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.09),
@@ -2711,7 +2690,7 @@ main {
     transform-origin: left;
   }
   .footer p a:hover {
-    color: #028a85;
+    color: $mc;
   }
   .contact-text a:hover,
   .toplist li a:hover {
@@ -2727,18 +2706,18 @@ main {
   }
   .swiper-button-next1:hover,
   .swiper-button-prev1:hover {
-    background: #028a85;
+    background: $mc;
     color: #fff;
   }
   .news-type li:hover {
-    background: #028a85;
+    background: $mc;
     color: #fff;
   }
   .box_news:hover {
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.09), 0 2px 6px rgba(0, 0, 0, 0.013);
   }
   .popular-links > a:hover {
-    background: #028a85;
+    background: $mc;
 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09), 0 1px 2px rgba(0, 0, 0, 0.013);
     color: #ffffff;
@@ -2775,7 +2754,7 @@ main {
 
 @media screen and (max-width: 1200px) and (min-width: 575px) {
   .overlayMenu > ul > li > a:hover {
-    color: #028a85;
+    color: $mc;
   }
 }
 .menu-toggle,
@@ -3194,7 +3173,7 @@ main {
     transform: scaleX(1);
   }
   .mobile-search.active button {
-    color: #028a85;
+    color: $mc;
   }
   .header-top-right {
     z-index: 2;
@@ -3277,7 +3256,7 @@ main {
   font-weight: bold;
   padding: 10px 20px;
   color: #fff;
-  background: #028a85;
+  background: $mc;
 }
 .about-nav ul {
   padding: 5px 0;
@@ -3299,16 +3278,16 @@ main {
   font-family: "FontAwesome";
   top: 10px;
   font-size: 13px;
-  color: #028a85;
+  color: $mc;
   transition: all 0.4s;
 }
 .about-nav li.active a {
-  background: #028a85;
+  background: $mc;
   color: #fff;
 }
 @media screen and (min-width: 575px) {
   .about-nav li a:hover {
-    background: #028a85;
+    background: $mc;
     color: #fff;
   }
   .about-nav li a:hover:before {
@@ -3351,7 +3330,7 @@ main {
   transition: all 0.3s;
 }
 .bread-crumb li a:hover {
-  color: #028a85;
+  color: $mc;
 }
 .bread-crumb li:not(:first-child) {
   padding-left: 22px;
@@ -3474,7 +3453,7 @@ main {
   margin-bottom: 5px;
 }
 .about-contact p a {
-  color: #028a85;
+  color: $mc;
 }
 .about-contact .recep-btn {
   background: #ffc800;
@@ -3587,7 +3566,7 @@ main {
 }
 .per-pos {
   font-size: 15px;
-  color: #028a85;
+  color: $mc;
   padding-bottom: 8px;
   border-bottom: 1px solid #f1f1f1;
   display: block;
@@ -3632,7 +3611,7 @@ main {
 }
 @media screen and (min-width: 575px) {
   .per-contact li a:hover {
-    color: #028a85;
+    color: $mc;
   }
   .resume-btn:hover {
     box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.09),
@@ -3740,7 +3719,7 @@ main {
   font-family: "FontAwesome";
   top: 1px;
   font-size: 14px;
-  color: #028a85;
+  color: $mc;
 }
 .document {
   padding: 10px 12px;
@@ -3769,7 +3748,7 @@ main {
   width: calc(100% - 42px);
 }
 .document a:hover {
-  color: #028a85;
+  color: $mc;
 }
 .res-table {
   overflow-x: auto;
@@ -3784,7 +3763,7 @@ main {
   font-weight: unset;
   font-size: 14px;
   color: #fff;
-  background: #028a85;
+  background: $mc;
   padding: 10px 12px;
   text-align: left;
 }
@@ -3954,7 +3933,7 @@ main {
 .search-con button {
   font-size: 16px;
   border-radius: 4px;
-  background: #028a85;
+  background: $mc;
   color: #fff;
   padding: 10px 40px;
   margin-right: 25px;
@@ -3967,14 +3946,14 @@ main {
 }
 .search-con a {
   font-size: 16px;
-  color: #028a85;
+  color: $mc;
   position: relative;
 }
 .search-con a:before {
   content: "";
   width: 100%;
   height: 1px;
-  background: #028a85;
+  background: $mc;
   position: absolute;
   left: 0;
   top: 100%;
@@ -4004,11 +3983,11 @@ main {
   transition: all 0.3s;
 }
 .documents-item .item-text a:hover {
-  color: #028a85;
+  color: $mc;
 }
 .item-date {
   font-size: 15px;
-  color: #028a85;
+  color: $mc;
   position: absolute;
   right: 25px;
   bottom: 8px;
@@ -4030,15 +4009,15 @@ main {
   height: 30px;
   border-radius: 2px;
   font-size: 12px;
-  color: #028a85;
+  color: $mc;
   transition: all 0.4s;
 }
 .pagination li a:hover {
-  background: #028a85;
+  background: $mc;
   color: #fff;
 }
 .pagination li.active a {
-  background: #028a85;
+  background: $mc;
   color: #fff;
 }
 .pagination li a i.fa {
@@ -4198,7 +4177,7 @@ main {
   font-size: 13px;
 }
 .material-text span a {
-  color: #028a85;
+  color: $mc;
   transition: all 0.3s;
 }
 .material-text span a:hover {
@@ -4215,7 +4194,7 @@ main {
   margin-right: 6px;
 }
 .material-text .download a {
-  color: #028a85;
+  color: $mc;
   transition: all 0.3s;
 }
 .material-text .download a:hover {
@@ -4356,7 +4335,7 @@ main {
   font-family: "Roboto";
   font-weight: bold;
   line-height: 18px;
-  color: #028a85;
+  color: $mc;
   transition: all 0.3s;
 }
 .news-title a:hover {
@@ -4467,7 +4446,7 @@ main {
   font-size: 15px;
   font-family: "Roboto";
   font-weight: bold;
-  color: #028a85;
+  color: $mc;
   transition: all 0.3s;
 }
 .video-content a:hover {
@@ -4625,11 +4604,11 @@ main {
 }
 .keywords {
   margin-bottom: 20px;
-  color: #028a85;
+  color: $mc;
   font-size: 17px;
 }
 .keywords a {
-  color: #028a85;
+  color: $mc;
   font-size: 17px;
 }
 .keywords a:hover {
@@ -4720,7 +4699,7 @@ main {
 }
 .c-regions p {
   font-size: 14px;
-  color: #028a85;
+  color: $mc;
   font-family: "Roboto";
   font-weight: bold;
   margin-bottom: 10px;
@@ -4740,14 +4719,14 @@ main {
   margin-bottom: 1px;
 }
 .region-control li.active a {
-  background: #028a85;
+  background: $mc;
   color: #fff;
 }
 .region-control li.active a:before {
   color: #fff;
 }
 .region-control li a:hover {
-  background: #028a85;
+  background: $mc;
   color: #fff;
 }
 .region-control li a:hover:before {
@@ -4760,7 +4739,7 @@ main {
   font-family: "FontAwesome";
   top: 10px;
   font-size: 13px;
-  color: #028a85;
+  color: $mc;
   transition: all 0.4s;
 }
 .contact-form {
@@ -4837,7 +4816,7 @@ main {
 .contact-form button {
   font-size: 16px;
   border-radius: 4px;
-  background: #028a85;
+  background: $mc;
   color: #fff;
   padding: 10px 40px;
   margin-right: 25px;
@@ -4859,7 +4838,7 @@ main {
 .c-icon {
   width: 38px;
   height: 38px;
-  background: #028a85;
+  background: $mc;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -4878,7 +4857,7 @@ main {
   transition: all 0.3s;
 }
 .c-content a:hover {
-  color: #028a85;
+  color: $mc;
 }
 .c-content p {
   font-size: 13px;
@@ -4909,7 +4888,7 @@ main {
   font-size: 14px;
   font-family: "Roboto";
   font-weight: bold;
-  color: #028a85;
+  color: $mc;
   text-decoration: underline;
 }
 .region-number h3 {
@@ -4986,7 +4965,7 @@ main {
   font-weight: bold;
   padding: 10px 20px;
   color: #fff;
-  background: #028a85;
+  background: $mc;
 }
 .statistics ul {
   padding: 5px 0;
@@ -5010,11 +4989,11 @@ main {
   font-family: "FontAwesome";
   top: 10px;
   font-size: 13px;
-  color: #028a85;
+  color: $mc;
   transition: all 0.4s;
 }
 .statistics li span {
-  background: #028a85;
+  background: $mc;
   display: inline-block;
   padding: 3px 6px;
   color: #fff;
@@ -5117,7 +5096,7 @@ main {
 .question-form button {
   font-size: 16px;
   border-radius: 4px;
-  background: #028a85;
+  background: $mc;
   color: #fff;
   padding: 10px 40px;
   margin: 0 0 0 auto;
@@ -5138,7 +5117,7 @@ main {
 }
 .question-form a {
   font-size: 16px;
-  color: #028a85;
+  color: $mc;
   display: inline;
   margin: 0 0 0 auto;
   position: relative;
@@ -5150,7 +5129,7 @@ main {
   top: 100%;
   width: 100%;
   height: 1px;
-  background: #028a85;
+  background: $mc;
 }
 .question-item {
   margin-bottom: 12px;
@@ -5253,7 +5232,7 @@ main {
   font-size: 15px;
   font-family: "Roboto";
   font-weight: bold;
-  color: #028a85;
+  color: $mc;
   display: inline-block;
   margin-bottom: 10px;
   transition: all 0.3s;
