@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jismoniy</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  @@include('./html/maps-popup.html')
+  @@include('./html/header.html')
+
+  <main>
+    <div class="wrap-container">
+     <div class="main-container">
+      <div class="sidenav">
+        @@include('./html/side-nav.html')
+      </div>
+      @@include('./html/page-content.html')
+     </div>
+    </div>
+    @@include('./html/video-gallery.html')
+  </main>
+
+  @@include('./html/footer.html')
+
+  <script src="js/main.js"></script>
+</body>
+</html>

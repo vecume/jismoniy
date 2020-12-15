@@ -17,6 +17,19 @@ $(document).ready(function () {
     mainSlider.slideTo(newsIndex - 1, 300);
   });
 
+  if ($(window).width() < 1200) {
+    $(".dropdown>a").on("click", function (e) {
+      $(this).parent().toggleClass("active");
+      e.preventDefault();
+      $(this).parent().find(".submenu").slideToggle(500);
+    });
+  }
+
+  $(".accor-head").on("click", function () {
+    $(this).toggleClass("active");
+    $(this).parent().find(".accor-body").slideToggle(600);
+  });
+
   $(".menu-icon").on("click", function (event) {
     event.preventDefault();
     console.log("hi");

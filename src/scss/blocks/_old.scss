@@ -3243,14 +3243,14 @@ main {
 .sidenav {
   width: 255px;
 }
-.about-nav {
+.side-nav-inner {
   border-radius: 8px;
 
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.09), 0 1px 2px rgba(0, 0, 0, 0.013);
   overflow: hidden;
   background: #fff;
 }
-.about-nav > div {
+.side-nav-inner > div {
   font-size: 16px;
   font-family: "Roboto";
   font-weight: bold;
@@ -3258,10 +3258,10 @@ main {
   color: #fff;
   background: $mc;
 }
-.about-nav ul {
-  padding: 5px 0;
+.side-nav-inner ul {
+  padding: 0;
 }
-.about-nav li a {
+.side-nav-inner li a {
   width: 100%;
   display: block;
   color: #262626;
@@ -3271,7 +3271,7 @@ main {
   transition: all 0.4s;
   font-size: 14px;
 }
-.about-nav li a:before {
+.side-nav-inner li a:before {
   content: "\f0da";
   position: absolute;
   left: 15px;
@@ -3281,16 +3281,16 @@ main {
   color: $mc;
   transition: all 0.4s;
 }
-.about-nav li.active a {
+.side-nav-inner li.active a {
   background: $mc;
   color: #fff;
 }
 @media screen and (min-width: 575px) {
-  .about-nav li a:hover {
+  .side-nav-inner li a:hover {
     background: $mc;
     color: #fff;
   }
-  .about-nav li a:hover:before {
+  .side-nav-inner li a:hover:before {
     color: #fff;
   }
 }
@@ -3312,7 +3312,7 @@ main {
   background-size: cover;
   margin-top: 20px;
 }
-.about-main-container {
+.page-main-content {
   width: calc(100% - 285px);
 }
 .bread-crumb {
@@ -3486,7 +3486,7 @@ main {
   .side-banner {
     max-width: 250px;
   }
-  .about-main-container {
+  .page-main-content {
     width: 100%;
     margin-bottom: 40px;
   }
@@ -3627,7 +3627,7 @@ main {
   .rukovod .main-container {
     flex-direction: column-reverse;
   }
-  .rukovod .about-main-container {
+  .rukovod .page-main-content {
     width: 100%;
     margin-bottom: 40px;
   }
@@ -4354,7 +4354,7 @@ main {
   .news-page.main-container {
     flex-direction: column-reverse;
   }
-  .news-page .about-main-container {
+  .news-page .page-main-content {
     width: 100%;
     margin-bottom: 40px;
   }

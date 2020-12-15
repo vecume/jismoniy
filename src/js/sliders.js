@@ -1,4 +1,4 @@
-const mainSlider = new Swiper(".main-slider", {
+const mainSlider = new Swiper(".main-slider .swiper-container", {
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
@@ -26,7 +26,7 @@ const usefulLinksSlider = new Swiper(".useful-slider .swiper-container", {
     prevEl: ".swiper-button-prev1",
   },
   breakpoints: {
-    575: {
+    320: {
       slidesPerView: 1,
     },
     768: {
@@ -48,7 +48,7 @@ const photoNewsSlider = new Swiper(".more-news-slider .swiper-container", {
   loop: true,
   centeredSlides: false,
   breakpoints: {
-    575: {
+    320: {
       slidesPerView: 1,
     },
     768: {
@@ -70,7 +70,7 @@ const videoNewsSlider = new Swiper(".video-news-slider .swiper-container", {
     delay: 2000,
   },
   breakpoints: {
-    575: {
+    320: {
       slidesPerView: 1,
     },
     768: {

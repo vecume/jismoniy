@@ -20352,7 +20352,7 @@ return jQuery;
 
 
 $(document).ready(function () {
-  const mainSlider = new Swiper(".main-slider", {
+  const mainSlider = new Swiper(".main-slider .swiper-container", {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
@@ -20380,7 +20380,7 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev1",
     },
     breakpoints: {
-      575: {
+      320: {
         slidesPerView: 1,
       },
       768: {
@@ -20402,7 +20402,7 @@ $(document).ready(function () {
     loop: true,
     centeredSlides: false,
     breakpoints: {
-      575: {
+      320: {
         slidesPerView: 1,
       },
       768: {
@@ -20424,7 +20424,7 @@ $(document).ready(function () {
       delay: 2000,
     },
     breakpoints: {
-      575: {
+      320: {
         slidesPerView: 1,
       },
       768: {
@@ -20448,6 +20448,19 @@ $(document).ready(function () {
     var newsIndex = parseInt($(this).attr("data-slider"));
     console.log(newsIndex);
     mainSlider.slideTo(newsIndex - 1, 300);
+  });
+
+  if ($(window).width() < 1200) {
+    $(".dropdown>a").on("click", function (e) {
+      $(this).parent().toggleClass("active");
+      e.preventDefault();
+      $(this).parent().find(".submenu").slideToggle(500);
+    });
+  }
+
+  $(".accor-head").on("click", function () {
+    $(this).toggleClass("active");
+    $(this).parent().find(".accor-body").slideToggle(600);
   });
 
   $(".menu-icon").on("click", function (event) {
