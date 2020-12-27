@@ -182,7 +182,22 @@
 }
 
 .video-btn {
+  position: relative;
   transition: 0.3s ease;
+  &::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    animation: ripple 1.6s ease-out infinite;
+    opacity: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
   a {
     display: flex;
     align-items: center;
@@ -198,6 +213,22 @@
     i {
       color: white;
     }
+  }
+}
+
+@keyframes ripple {
+  0%,
+  35% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
   }
 }
 
