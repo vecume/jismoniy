@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jismoniy</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    @@include('./html/maps-popup.html') @@include('./html/header.html')
+
+    <main>
+      <div class="wrap-container">
+        <ul class="bread-crumb">
+          <li>
+            <a href="/" title="Bosh sahifa" itemprop="url">
+              <span itemprop="name">Bosh sahifa</span>
+            </a>
+          </li>
+          <li>
+            <span itemprop="name">Video lavhalar</span>
+          </li>
+        </ul>
+        <div class="news-container">
+          <div class="news-details">
+            <div class="article-content">
+              <ul class="entry-meta">
+                <li><i class="fa fa-eye"></i> 262</li>
+                <li><i class="fa fa-calendar"></i> 26.08.2019 17:02</li>
+              </ul>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error,
+                impedit.
+              </h3>
+            </div>
+
+            <div class="article-content">
+              <iframe
+                title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, impedit."
+                width="100%" height="315"
+                src="https://www.youtube.com/embed/7bOptq-NPJQ"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            
+          </div>
+          <div class="news-sidebar">
+            <h2 class="section-title"><span>Videolar</span></h2>
+            <div class="sidebar-video-gallery">
+              @@for(var i = 0; i < 5; i++) {
+                <div class="single-default-news">
+                  <div class="img-wrapper">
+                    <img
+                    src="https://picsum.photos/id/2`+i+`/1200"
+                    alt="image"
+                  />
+                  </div>
+                  <div class="news-content">
+                    <h3>
+                      <a href="gallery-video-item.html"
+                        >Lorem ipsum dolor sit amet consectetur adipisicing elit.</a
+                      >
+                    </h3>
+                  </div>
+                  <div class="video-btn">
+                    <a href="gallery-video-item.html"><i class="fa fa-play"></i></a>
+                  </div>
+                </div>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    @@include('./html/footer.html')
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
