@@ -1,5 +1,6 @@
 //=require jquery/dist/jquery.js
 //=require swiper/swiper-bundle.js
+//=require magnific-popup/dist/jquery.magnific-popup.js
 
 $(document).ready(function () {
   //=require sliders.js
@@ -71,4 +72,15 @@ $(document).ready(function () {
     $(".overlayMenu").removeClass("open");
     $(".menu-shadow").removeClass("active");
   });
+
+  //popups
+  $(".gallery-items-wrapper .wrap-container").magnificPopup({
+    delegate: ".image-popup",
+    type: "image",
+    gallery: { enabled: true },
+  });
+
+  // $(".image-popup").magnificPopup({
+  //   type: "image",
+  // });
 });

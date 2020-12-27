@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jismoniy</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  @@include('./html/maps-popup.html')
+  @@include('./html/header.html')
+
+  <main>
+    <div class="wrap-container">
+      <ul class="bread-crumb">
+        <li>
+          <a href="/" title="Bosh sahifa" itemprop="url">
+            <span itemprop="name">Bosh sahifa</span>
+          </a>
+        </li>
+        <li>
+          <span itemprop="name">Foto lavhalar</span>
+        </li>
+      </ul>
+      <div class="gallery-wrapper">
+        @@for(var i = 0; i < 9; i++) {
+          <div class="single-more-news">
+            <div class="img-wrapper">
+              <img src="img/sample.jpg" alt="image" />
+            </div>
+            <div class="news-content">
+              <ul>
+                <li><i class="fa fa-calendar"></i> 25.08.2019 18:24</li>
+              </ul>
+              <h3>
+                <a href="gallery-item.html">
+                  Fotoreportaj: 15ta yangi qonun maqullangan Senat yalpi majlisi
+                  qanday o'tdi
+                </a>
+              </h3>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </main>
+  
+  @@include('./html/footer.html')
+
+  <script src="js/main.js"></script>
+</body>
+</html>

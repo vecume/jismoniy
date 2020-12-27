@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jismoniy</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  @@include('./html/maps-popup.html')
+  @@include('./html/header.html')
+
+  <main>
+    <div class="wrap-container">
+      <ul class="bread-crumb">
+        <li>
+          <a href="/" title="Bosh sahifa" itemprop="url">
+            <span itemprop="name">Bosh sahifa</span>
+          </a>
+        </li>
+        <li>
+          <span itemprop="name">Foto lavhalar</span>
+        </li>
+      </ul>
+    </div>
+    <div class="gallery-items-wrapper">
+      <div class="wrap-container">
+        @@for(var i = 0; i < 12; i++) {
+          <div class="single-default-news">
+            <div class="img-wrapper">
+              <img
+              src="https://picsum.photos/id/`+i+`/1200"
+              alt="image"
+            />
+            </div>
+            <div class="video-btn">
+              <a href="https://picsum.photos/id/`+i+`/1200" class="image-popup"><i class="fa fa-camera"></i></a>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+    
+  </main>
+  
+  @@include('./html/footer.html')
+
+  <script src="js/main.js"></script>
+</body>
+</html>
