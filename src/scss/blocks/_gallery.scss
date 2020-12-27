@@ -32,8 +32,9 @@
 }
 
 .gallery-items-wrapper {
+  padding: 50px 0;
+  background-color: #1f1f1f;
   .wrap-container {
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 25px;
