@@ -2331,15 +2331,9 @@ main {
   position: relative;
   display: block;
   transition: all 0.3s;
+  background-color: rgba($color: $mc, $alpha: 0.4);
 }
-.services-container .column3:nth-child(odd) .services,
-.service_main .ser-item:nth-child(odd) .services {
-  background: linear-gradient(135deg, #cedfc8, #d4f0ee);
-}
-.services-container .column3:nth-child(even) .services,
-.service_main .ser-item:nth-child(even) .services {
-  background: linear-gradient(135deg, #d4e1ef, #dfc9c9);
-}
+
 .services h3 {
   font-size: 24px;
   margin-bottom: 5px;
@@ -2749,7 +2743,8 @@ main {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 5px 8px rgba(0, 0, 0, 0.08);
   }
   .services:hover {
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08), 0 2px 7px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1), 0 2px 7px rgba(0, 0, 0, 0.1);
+    background-color: rgba($color: $mc, $alpha: 0.6);
   }
   .swiper-button-prev2:hover,
   .swiper-button-next2:hover {
