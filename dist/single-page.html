@@ -7,26 +7,6 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div id="maps-popup" class="maps" style="display: none;">
-  <div class="wrap-container">
-      <a href="/" class="header-logo">
-  <img src="img/gerb.png" alt="logo">
-  <span>O‘ZBЕKISTON RЕSPUBLIKASI <br>
-  VAZIRLAR MAHKAMASI HUZURIDAGI <br>
-  TA’LIM SIFATINI NAZORAT QILISH <br>
-  DAVLAT INSPЕKSIYASI</span>
-</a>        <div class="maps__close">
-          <a href="#">×</a>
-          <span>Карта сайта</span>
-      </div>
-      <div class="maps__search">
-          <form action="#">
-              <input type="text" placeholder="Введите слово для поиска">
-              <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-      </div>
-          </div>
-</div>
   <header>
   <div class="header-top">
     <div class="wrap-container">
@@ -43,6 +23,25 @@
         </li>
         <li><a href="#">TOP 1000</a></li>
       </ul>
+      <a href="/about/stop-corruption/" class="recep-btn"
+            ><img
+              alt="Stop-korrupsiya!"
+              src="img/stop.png"
+              style="width: 18px; height: 18px;"
+            />STOP-KORRUPSIYA!</a
+          >
+      <div class="search-input">
+        <form action="/search/">
+          <input
+            type="text"
+            name="q"
+            value=""
+            placeholder="Sayt bo‘yicha izlash..."
+          />
+        <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <button class="searchbar-toggler" type="button"><i class="fa fa-search"></i></button>
+      </div>
       <div class="header-top-right">
         <ul class="lanuage">
           <li class="active"><a href="/">O'z</a></li>
@@ -51,23 +50,9 @@
 
           <li><a href="#">En</a></li>
         </ul>
-
-        <div class="header__sound" href="#">
-          <img src="img/megaphone.png" alt="Sound" />
-          <div id="sound-popup">
-            <span>Звуковое сопровождение</span>
-            <p>
-              На сайте присутствует звуковое сопровождение.
-            </p>
-            <p>
-              Чтобы прослушать текст необходимо выделите его мышкой
-            </p>
-          </div>
-        </div>
         <div class="eye-version">
           <a href="#eyeModal" id="sView">
             <img src="img/eye-scanner.png" alt="Maxsus imkoniyatlar" />
-            <span>Maxsus imkoniyatlar</span>
           </a>
           <div id="eyeModal" style="display: none;">
   <div class="dropdown-menu dropdown-menu-right specialViewArea">
@@ -108,25 +93,9 @@
       </div>
     </div>
   </div>
-  <button
-    type="button"
-    data-fancybox-close=""
-    class="fancybox-button fancybox-close-small"
-    title="Close"
-  >
-    <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
-      <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
-    </svg>
-  </button>
 </div>
 
         </div>
-      </div>
-
-      <div class="search-input mobile-search">
-        <form action="/search/">
-          <button><i class="fa fa-search"></i></button>
-        </form>
       </div>
 
       <div class="menu-toggle"><span></span></div>
@@ -162,35 +131,18 @@
               ></a>
             </li>
           </ul>
-          <div class="search-input">
-            <form action="/search/">
-              <input
-                type="text"
-                name="q"
-                value=""
-                placeholder="Sayt bo‘yicha izlash..."
-              />
-              <button><i class="fa fa-search"></i></button>
-            </form>
-          </div>
+          
         </div>
         <div class="virtual-reception">
           <p>Inspeksiya telefoni</p>
           <a href="tel:+998712310753">+998 71 231-07-53</a>
-          <a href="/about/stop-corruption/" class="recep-btn"
-            ><img
-              alt="Stop-korrupsiya!"
-              src="img/stop.png"
-              style="width: 18px; height: 18px;"
-            />STOP-KORRUPSIYA!</a
-          >
+          
         </div>
       </div>
     </div>
   </div>
   <div class="header-nav">
     <div class="wrap-container">
-      <div class="menu-icon"><span></span></div>
       <nav class="overlayMenu">
         <ul>
           <li><a href="/">Bosh sahifa</a></li>

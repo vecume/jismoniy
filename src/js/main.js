@@ -2,6 +2,22 @@
 //=require swiper/swiper-bundle.js
 //=require magnific-popup/dist/jquery.magnific-popup.js
 
+$.extend(true, $.magnificPopup.defaults, {
+  tClose: "Yopish (Esc)", // Alt text on close button
+  tLoading: "Yuklanmoqda...", // Text that is displayed during loading. Can contain %curr% and %total% keys
+  gallery: {
+    tPrev: "Oldingi (Chapga tugmasi)", // Alt text on left arrow
+    tNext: "Keyingi (O'ngga tugmasi)", // Alt text on right arrow
+    tCounter: "%total% dan %curr%-si", // Markup for "1 of 7" counter
+  },
+  image: {
+    tError: '<a href="%url%">Rasm</a> yuklanmadi.', // Error message when image could not be loaded
+  },
+  ajax: {
+    tError: '<a href="%url%">Rasm</a> yuklanmadi', // Error message when ajax request failed
+  },
+});
+
 $(document).ready(function () {
   //=require sliders.js
 
@@ -30,6 +46,15 @@ $(document).ready(function () {
     $("body").attr("style", `zoom: ${100 + value}%;`);
   });
 
+  $(".searchbar-toggler").on("click", function () {
+    if ($(".search-input").hasClass("active")) {
+      $(".search-input").removeClass("active");
+      $(this).children("i").removeClass("fa-close");
+    } else {
+      $(".search-input").addClass("active");
+      $(this).children("i").addClass("fa-close");
+    }
+  });
   $(".squareAppearances").on("click", function () {
     const dataClass = $(this).data("class");
     if (dataClass == "normal") {
@@ -52,18 +77,6 @@ $(document).ready(function () {
     $(this).parent().find(".accor-body").slideToggle(600);
   });
 
-  $(".menu-icon").on("click", function (event) {
-    event.preventDefault();
-    console.log("hi");
-    $("#maps-popup").fadeIn(400);
-    $("html, body").css("overflow", "hidden");
-  });
-
-  $(".maps__close a").on("click", function (event) {
-    event.preventDefault();
-    $("#maps-popup").fadeOut(400);
-    $("html, body").css("overflow", "unset");
-  });
   $(".menu-toggle").on("click", function () {
     $(".overlayMenu").addClass("open");
     $(".menu-shadow").addClass("active");
@@ -79,8 +92,4 @@ $(document).ready(function () {
     type: "image",
     gallery: { enabled: true },
   });
-
-  // $(".image-popup").magnificPopup({
-  //   type: "image",
-  // });
 });

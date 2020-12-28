@@ -82,7 +82,14 @@ function css(params) {
         })
       )
       // .pipe(webpcss())
-      // .pipe(purify([path.src.js, path.src.html, "./src/html/*.html"]))
+      // .pipe(
+      //   purify([
+      //     "./src/*.html",
+      //     "./src/html/*.html",
+      //     "./src/js/*.js",
+      //     "./dist/js/*.js",
+      //   ])
+      // )
       .pipe(cleanCss())
       .pipe(sourcemaps.write("."))
 
