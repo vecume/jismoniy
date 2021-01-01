@@ -15,27 +15,3 @@
   padding: 0 15px;
   width: 35%;
 }
-
-.article-content {
-  padding: 30px;
-  border-bottom: 1px solid #dedede;
-  .entry-meta {
-    display: flex;
-    margin-bottom: 20px;
-    li {
-      margin-right: 15px;
-      font-size: 15px;
-      color: #8a8a8a;
-      i {
-        color: $mc;
-        margin-right: 5px;
-      }
-    }
-  }
-  h3 {
-    font-size: 22px;
-  }
-  iframe {
-    border: none;
-  }
-}
