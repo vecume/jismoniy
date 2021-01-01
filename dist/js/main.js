@@ -22228,20 +22228,17 @@ $.extend(true, $.magnificPopup.defaults, {
 });
 
 $(document).ready(function () {
-  const mainSlider = new Swiper(".main-slider .swiper-container", {
+  const mainSlider = new Swiper(".big-slider-container .swiper-container", {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
-    speed: 1000,
-    effect: "fade",
     pagination: {
       el: ".swiper-pagination",
-      clickable: true,
+      type: "progressbar",
     },
-    centeredSlides: false,
-    autoplay: {
-      delay: 6000,
-      disableOnInteraction: false,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
   
@@ -22312,13 +22309,6 @@ $(document).ready(function () {
     },
   });
   
-
-  $(".tab-control li").on("click", function () {
-    $(this).addClass("active").siblings().removeClass("active");
-    var thisDataId = $(this).attr("data-id");
-    $(".news-wrap").fadeOut(1);
-    $("#" + thisDataId).fadeIn();
-  });
 
   $(".news-control .box_news").hover(function () {
     var newsIndex = parseInt($(this).attr("data-slider"));

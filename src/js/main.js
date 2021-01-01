@@ -21,13 +21,6 @@ $.extend(true, $.magnificPopup.defaults, {
 $(document).ready(function () {
   //=require sliders.js
 
-  $(".tab-control li").on("click", function () {
-    $(this).addClass("active").siblings().removeClass("active");
-    var thisDataId = $(this).attr("data-id");
-    $(".news-wrap").fadeOut(1);
-    $("#" + thisDataId).fadeIn();
-  });
-
   $(".news-control .box_news").hover(function () {
     var newsIndex = parseInt($(this).attr("data-slider"));
     console.log(newsIndex);

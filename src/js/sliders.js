@@ -1,17 +1,14 @@
-const mainSlider = new Swiper(".main-slider .swiper-container", {
+const mainSlider = new Swiper(".big-slider-container .swiper-container", {
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
-  speed: 1000,
-  effect: "fade",
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+    type: "progressbar",
   },
-  centeredSlides: false,
-  autoplay: {
-    delay: 6000,
-    disableOnInteraction: false,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 

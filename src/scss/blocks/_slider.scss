@@ -29,7 +29,7 @@
   img {
     width: 333px;
     height: 222px;
-    transition: all 1.5s ease-out;
+    transition: all 0.3s ease;
   }
   .news-content {
     position: absolute;
@@ -48,6 +48,10 @@
       margin-top: 10px;
       a {
         color: #ffffff;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
       }
     }
     ul {
@@ -80,38 +84,8 @@
   }
 }
 
-.single-more-news
-  .news-content
-  .single-more-news
-  .news-content
-  h3
-  .single-more-news
-  .tags {
-  top: 0;
-  left: 25px;
-  position: absolute;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.single-more-news .tags a {
-  display: inline-block;
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: capitalize;
-  padding: 5px 15px;
-  background-color: $mc;
-}
-
-.single-more-news:hover .tags,
-.single-more-news:focus .tags {
-  left: 15px;
-}
-
 .single-more-news:hover img,
 .single-more-news:focus img {
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -245,5 +219,84 @@
     text-transform: uppercase;
     font-size: 16px;
     color: #fff;
+  }
+}
+
+.big-slider-container {
+  max-width: 100%;
+  margin-bottom: 30px;
+  position: relative;
+  .swiper-pagination {
+    top: unset;
+    bottom: 0;
+  }
+  .swiper-navigations {
+    display: flex;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    z-index: 4;
+    button {
+      width: 30px;
+      height: 30px;
+      margin-left: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      transition: 0.3s ease;
+      i {
+        color: $sc;
+        font-size: 15px;
+      }
+      &:hover {
+        background-color: $sc;
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.big-news-item {
+  position: relative;
+  max-height: 600px;
+  &::after {
+    opacity: 0.7;
+    background-image: linear-gradient(transparent, $mc),
+      linear-gradient(transparent, $mc);
+    content: "";
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+  .img-wrapper {
+    max-height: 100%;
+  }
+  .description {
+    max-width: 400px;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 10;
+    a {
+      display: block;
+      color: white;
+      line-height: 1.4;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+    .date {
+      color: white;
+      margin-bottom: 5px;
+      font-size: 13px;
+    }
   }
 }
